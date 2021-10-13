@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 def Register():
-    driver = webdriver.Chrome('C:/Seleniu_Chrome_driver/chromedriver')
+    driver = webdriver.Chrome('../Seleniu_Chrome_driver/chromedriver.exe')
     driver.get("https://bip.cl/acount/registro/")
     time.sleep(3)    
     name= driver.find_element_by_id("nombre")

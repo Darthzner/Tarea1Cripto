@@ -7,15 +7,15 @@ from selenium.webdriver.common.keys import Keys
 
 
 def ModifyPass():
-    driver = webdriver.Chrome('C:/Seleniu_Chrome_driver/chromedriver')
+    driver = webdriver.Chrome('../Seleniu_Chrome_driver/chromedriver.exe')
     driver.get("https://bip.cl/canasta")
     time.sleep(3)    
     usuario= driver.find_element_by_id("usuario")
     usuario.clear()
-    usuario.send_keys("carrascolester17@gmail.com")
+    usuario.send_keys("")#introducir mail
     clave= driver.find_element_by_id("clave")
     clave.clear()
-    clave.send_keys("123")    
+    clave.send_keys("")  #introducir clave  
     driver.find_element_by_id('btnIngreso').click()    
     time.sleep(2)
     driver.get("https://bip.cl/acount/micuenta")
@@ -24,10 +24,10 @@ def ModifyPass():
     time.sleep(2)
     contrasenia = driver.find_element_by_id("contrasenia")
     contrasenia.clear()
-    contrasenia.send_keys("1234")
+    contrasenia.send_keys("")#introducir nueva contraeña
     rcontrasenia= driver.find_element_by_name('rcontrasenia')
     rcontrasenia.clear()
-    rcontrasenia.send_keys("1234")
+    rcontrasenia.send_keys("")#introducir nueva contraeña
     driver.find_element_by_id('btnGuardarPerfil').click()    
     
     time.sleep(5)

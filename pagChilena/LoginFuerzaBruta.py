@@ -8,7 +8,7 @@ from selenium import webdriver
 
 def Login():
     letter = string.ascii_lowercase
-    driver = webdriver.Chrome('C:/Seleniu_Chrome_driver/chromedriver')
+    driver = webdriver.Chrome('../Seleniu_Chrome_driver/chromedriver.exe')
     driver.get("https://bip.cl/canasta")
     time.sleep(3)    
     for i in range(100):
